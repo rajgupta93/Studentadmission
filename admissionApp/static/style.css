@@ -1,0 +1,185 @@
+* {
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  display: flex;
+}
+.head1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 20px;
+}
+
+.container .merit-list {
+  width: 100%;
+}
+.merit-list tr th {
+  background-color: blue;
+  color: white;
+}
+
+.logo-admin {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px 5px 0 0;
+}
+
+.outer-admin-login {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  border-radius: 5px;
+}
+.email-admin input,
+.password input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  outline: none;
+  box-shadow: 1spx 10px #f2f2f2;
+  background: #f2f2f2;
+}
+
+.outer-admin-login .admin-login {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 12px 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+}
+
+.admin-login h1 {
+  font-size: 30px;
+  color: #008cba;
+}
+
+.login-admin-btn {
+  background-color: #008cba; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.container .merit-list {
+  width: 100%;
+}
+.merit-list tr th {
+  background-color: blue;
+  color: white;
+}
+.registerform {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  font-weight: 800;
+}
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+}
+.td input {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.personal {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+body {
+  background-image: linear-gradient(
+    to left,
+    #031f49,
+    #1d3d70,
+    #335f9a,
+    #4883c6,
+    #5da9f3
+  );
+}
+
+.navbar {
+  display: flex;
+  color: #fff;
+}
+.head1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
+.registerform {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  font-weight: 800;
+}
+
+.personal {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.personal input {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.qualification {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.qualification input {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.td input {
+  padding: 12px 20px;
+  margin: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

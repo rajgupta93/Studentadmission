@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <script src="{% static 'script.js' %}"></script>
+    <title>Merit</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logoimg">
+        <img
+          src="{% static 'logo.JPG' %}"
+          alt="CollegeLogo"
+          width="100px"
+          height="100px"
+        />
+      </div>
+      <div class="head1">
+        <div>
+          <h1>Bharati Vidyapeeth College of Engineering</h1>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login/SignUp</a></li>
+            <li><a href="#">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <table class="merit-list">
+        <tr>
+          <th>Name</th>
+          <th>Email id</th>
+          <th>Father's Name</th>
+          <th>DoB</th>
+        </tr>
+        {% for student in data %} {% if student.selected == 1 %}
+        <tr>
+          <td onclick="window.location.href='merit/{{student.id}}/'">
+            {{student.firstName}}
+          </td>
+          <td>{{student.mailId}}</td>
+          <td>{{student.fatherName}}</td>
+          <td>{{student.dob}}</td>
+        </tr>
+        {% endif %} {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>

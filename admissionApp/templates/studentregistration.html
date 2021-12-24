@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logoimg">
+        <img src="logo.JPG" alt="CollegeLogo" width="100px" height="100px" />
+      </div>
+      <div class="head1">
+        <div>
+          <h1>Bharati Vidyapeeth College of Engineering</h1>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login/SignUp</a></li>
+            <li><a href="adminlogin">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="registerform">
+      <h1>Student Registration Form</h1>
+      <form id="register" method="post">
+        {% csrf_token %}
+        <h1>Personal Details</h1>
+        <div class="personal">
+          <label>First Name:</label>
+          <input type="text" name="fname" id="name" placeholder="First Name" />
+          &nbsp;
+          <label>Middle Name:</label>
+          <input type="text" name="mname" id="name" placeholder="Middle Name" />
+          &nbsp;
+          <label>Last Name:</label>
+          <input type="text" name="lname" id="name" placeholder="Last Name" />
+          <br /><br />
+          <label>D.O.B. :</label>
+          <input type="date" name="dob" id="dob" />
+          <br /><br />
+          <label>Gender:</label>
+          <input type="radio" name="gender" id="male" />
+          <span>Male</span>
+          &nbsp;&nbsp;
+          <input type="radio" name="gender" id="male" />
+          <span>Female</span>
+          <br /><br />
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="xyz@gmail.com"
+          />
+          <br /><br />
+          <label>Father's Name:</label>
+          <input
+            type="text"
+            name="ftname"
+            id="ftname"
+            placeholder="Father Name"
+          />
+          <br /><br />
+          <label>Mother's Name:</label>
+          <input
+            type="text"
+            name="mtname"
+            id="mtname"
+            placeholder="Mother Name"
+          />
+          <br /><br />
+          <label>Mobile Number:</label>
+          <input
+            type="tel"
+            id="mobile"
+            placeholder="Mobile Number"
+            name="mobile"
+          />
+          <br /><br />
+          Address: <textarea id="address"></textarea>
+        </div>
+
+        <div class="qualification">
+          <h1>Qualification Details</h1>
+          <table>
+            <div class="qualification">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Board</th>
+                  <th>School Name</th>
+                  <th>Percent</th>
+                  <th>Files</th>
+                </tr>
+              </thead>
+              <tbody class="tbody">
+                <tr class="tr">
+                  <td>Secondary</td>
+                  <td class="td">
+                    <input type="text" id="board" name="tenthBoard" />
+                  </td>
+                  <td class="td">
+                    <input type="text" id="School" name="tenthSchool" />
+                  </td>
+                  <td class="td">
+                    <input type="text" id="Percent" name="tenthPercent" />
+                  </td>
+
+                  <td class="td"><input type="file" id="fileten" /></td>
+                </tr>
+                <tr>
+                  <td class="td">Sr. Secondary</td>
+                  <td class="td">
+                    <input type="text" id="board" name="twelveBoard" />
+                  </td>
+                  <td class="td">
+                    <input type="text" id="tSchool" name="twelveSchool" />
+                  </td>
+                  <td class="td">
+                    <input type="text" id="tPercent" name="twelvePercent" />
+                  </td>
+                  <td class="td"><input type="file" id="filetw" /></td>
+                </tr>
+              </tbody>
+            </div>
+          </table>
+          <br /><br />
+          <input type="submit" value="Register" name="submit" id="submit" />
+        </div>
+        <!-- <select>
+                <option>Percent</option>
+                <option>CGPA</option>
+            </select> 
+            <br><br>  -->
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <script src="{% static 'script.js' %}"></script>
+    <title>All Applications</title>
+  </head>
+  <body>
+    <div class="container">
+      <table class="merit-list">
+        <tr>
+          <th>Name</th>
+          <th>Email id</th>
+          <th>Father's Name</th>
+          <th>DoB</th>
+          <th>Application</th>
+        </tr>
+        {% for student in data %}
+        <tr>
+          <td>{{student.firstName}}</td>
+          <td>{{student.mailId}}</td>
+          <td>{{student.fatherName}}</td>
+          <td>{{student.dob}}</td>
+          <td>
+            <button onclick="window.location.href='merit/{{student.id}}/'">
+              View application
+            </button>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </body>
+</html>
